@@ -1,0 +1,67 @@
+CHAVE SSH E TOKEN
+Abrir o Git bash
+
+*CHAVE SSH É UMA FORMA DE FORNECER UMA CONEXÃO SEGURA E ENCRIPTADA ENTRE DUAS MÁQUINAS.
+Comandos ssh-keygen -t ed25519 -C (Mais o email cadastrado no Git hub)
+Tecla l lista a pasta 
+Digitar pwd mostra o caminho que as chaves estão salvas
+Inicializar o ssh peygen  digitar comando eval $(ssh-agent -s)
+O comando vai gerar um número que smepre varia
+Exemplo Agend pid 1382 dá enter
+Digite ls que é para entregar para esse comendo 
+E vamos digitar o comando sssh-add id_ed25519 ( é passada para o agente a chave privada que ele utilizará 
+para descriptografar)
+(lembrando de passar a chave privada)
+( Dica para mudar a senha do repositório git bash retorne ao processo do inicio)
+Para limpar a tela digite clear e enter
+Processo
+1 Gerar chave com os comandos, navegar na pasta, pegar o conteúdo dela
+2 Colocar a chave no Git Hub
+3 Voltar no Git bash e validar
+(Clonar um repositório no Hit hub é como se tivesse fazen
+Toda vez que for clonar um repósitório, quando vc tem uma chave ssh na maquina, não pode simplemsnete 
+copiar o link dor epositório e usar o Git clone, não pode usar a URL prq parece estar clonanado
+Https, tem que usar o caminho ssh
+
+
+INICIAR O GIT HUB 
+
+-git init (Para iniciar o repósitorio do git)
+-git add ( Para mover arquivos, e comgiteçar a dar inio ao evrsionamento e para conhecer os primeiros comandos)
+-git commit ( Para criar o 1º comit usando git commit)
+Quando está lindando com um terminal, sempre colocar o nome do terminal na frente
+
+Criando um repositório
+1 Vou na pasta workspace que é a que vou usar durente o curso
+2 clico com botão direito e abro o Git bash here
+3 No Git bash digito mkdir e o nome da pasta e dou enter
+4 git init pata iniciar e Dígito ls para listar 
+5 Para abrir a pasta digito cd livro-receitas para iniciar o git na pasta
+6 Ls para listar 
+7 Flag ls -a para mostrar a pasta oculta no git.
+Se utilizar o Git pela 1º vez, ele pede algumas configurações
+8 Para configurar digitar git config --global user.email "ivoadm2018@gmail.com)"
+E dar enter
+9 Digitar  git config --global user.name Perkles e dar enter
+ Adcionando um arquivo
+Usar o Markdown ( Pois é a forma mais humana de escrever o HTML para quem está iniciando)
+Dá para usar a ferramenta no text, na hora de renomear escrever m.d no final do nome.
+
+Commits são objetos do git que dão significado as alterações
+
+Para listar as configurações no Git digitar git config --list
+Para configurar o email  digitar  git config --global --unset user.email dar enter e  
+digitar git gonfig --global --unset user.name
+Conflito de merge no Git hub acontece quando o Git hub tenta juntar 2 códigos e há 2 alterações na mesma linha.
+Esse conflito deve ser resolvido pelo desenvolvedor manualmente e após ser submetido ao Git hub 
+git add ** para adcionar tudo e ctrl para limpar
+modified é quando foi modificado e ainda não está pronto para ir para o Git
+git push empurra o repositório para o git hub
+git pull origin master é para tentar unir os repositórios 
+Quando aparecer conflitos (both modified: README.MD)
+git add* ( PARA ADCIONAR O ARQUIVO PARA AREA DE STAGE) ENTER
+git commit -m "resolve conflitos" enter e depois empurra para o Git hub
+Como baixar um código do github 
+git clone para clonar a URL de códigos do git hub
+ls -a serve para mostrar pastas ocultas
+git remote -v mostra os repositórios remotos na qual o repositório remoto está apontado.
